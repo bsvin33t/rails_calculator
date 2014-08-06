@@ -15,4 +15,5 @@ class CalculatorController < ApplicationController
   def create_or_find_calculator
     Calculator.first || Calculator.create({:state => 0})
   end
+
 end

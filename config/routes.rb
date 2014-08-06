@@ -6,6 +6,8 @@ RailsCalculator::Application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'calculator_client#create'
 
+  get 'calculator_client/angular' => 'calculator_client#angular'
+
   # Example of regular route:
   put 'calculator' => 'calculator#update'
 
@@ -14,6 +16,8 @@ RailsCalculator::Application.routes.draw do
     put 'calculator_update'  => 'calculator#calculator_update'
     post 'calculator_create' => 'calculator#calculator_create'
   end
+
+
 
 
   # Example of named route that can be invoked with purchase_url(id: product.id)

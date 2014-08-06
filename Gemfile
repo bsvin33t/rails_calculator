@@ -36,7 +36,10 @@ group :development, :test do
   gem 'sqlite3'
   gem 'rspec-rails'
   gem 'jslint_on_rails'
+  gem 'jasmine'
 end
+gem 'angularjs-rails'
+gem 'ng-rails-csrf'
 
 group :production do
   gem 'pg', '0.17.1'

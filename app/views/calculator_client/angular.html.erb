@@ -1,0 +1,9 @@
+<div ng-app="calculatorApp" ng-controller="CalculatorCtrl as calculator">
+
+  <input type = "text" class = "command"  ng-model="command"/>
+  <input type = "button" class = "submit" value = "Calculate" ng-click='calculator.processCommand(command)'/>
+
+  <div class="command-history" ng-repeat="command in calculator.commandHistory track by $index">
+       <ul>{{ command }}</ul>
+  </div>
+</div>

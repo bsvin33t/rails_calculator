@@ -14,5 +14,8 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require underscore.js
+//= require angular
+//= require ng-rails-csrf
+//= require angular_calculator.js
 //= require_tree .
 
